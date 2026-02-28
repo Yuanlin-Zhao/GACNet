@@ -1,0 +1,52 @@
+name: LKFMixer_L_x4
+model_type: SRModel
+scale: 4
+num_gpu: 1  # set num_gpu: 0 for cpu mode
+manual_seed: 0
+
+# python basicsr/test.py -opt options/test/test_LKFMixer_x4.yml --auto_resume
+
+datasets:
+  test_1:  # the 1st test dataset
+    name: set5
+    type: PairedImageDataset
+    dataroot_gt: E:\zyl\crossSR\dataset\RGBTDronePerson\val\GT
+    dataroot_lq: E:\zyl\crossSR\dataset\RGBTDronePerson\val\LR
+    io_backend:
+      type: disk
+
+# network structures
+network_g:
+  type: GACNet
+  in_channels: 3
+  channels: 64
+  out_channels: 3
+  upscale: 4
+  num_block: 12
+  large_kernel: 31
+
+
+# path
+path:
+  pretrain_network_g: E:\zyl\crossSR\LKFMixer-master\experiments\allresults\LKFMixer_L_x4Drone\models\net_g_50000.pth
+  param_key_g: params_ema
+  strict_load_g: true
+
+# validation settings
+val:
+  save_img: true
+  suffix: ~  # add suffix to saved images, if None, use exp name
+  self_ensemble_testing: false
+
+  metrics:
+    PSNR: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 4
+      test_y_channel: true
+      better: higher
+    SSIM: # metric name, can be arbitrary
+      type: calculate_ssim
+      crop_border: 4
+      test_y_channel: true
+      better: higher
+
