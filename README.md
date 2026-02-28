@@ -58,4 +58,4 @@ python basicsr/test.py -opt options/test/test_GCANet_x4.yml
 This code is based on [BasicSR](https://github.com/XPixelGroup/BasicSR). We thank the authors for their excellent open-source framework.
 
 ---
-**Contact:** `zyl@example.com`
+**Contact:** `zyl@chd.edu.cn`
