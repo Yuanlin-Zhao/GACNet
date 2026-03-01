@@ -54,7 +54,7 @@ To start training the GCANet model:
 ```bash
 python basicsr/train.py -opt options/train/train_GCANet_x4.yml
 ```
-num_block: 1 GACNet-T, num_block: 6 GACNet-B, num_block: 12 GACNet-L
+num_block: 1 GACNet-T, num_block: 6 GACNet-S, num_block: 12 GACNet-L
 ### Testing
 To evaluate the model and calculate metrics (PSNR/SSIM):
 ```bash
