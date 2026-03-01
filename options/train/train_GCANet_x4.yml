@@ -1,5 +1,5 @@
 # general settings
-name: GACNet
+name: GACNet_L_x4
 model_type: SRModel
 scale: 4
 num_gpu: 1
