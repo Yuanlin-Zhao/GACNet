@@ -1,6 +1,4 @@
-
-
-## 🛠️ Installation
+# 🛠️ Installation
 
 ### 1. Create Environment
 We recommend using Conda to manage your dependencies:
@@ -20,8 +18,16 @@ It is recommended to use GPU for training and testing.
 ## 📂 Dataset Preparation
 Evaluate the model on the **RGBTDronePerson** dataset for download.
 
-* **Download Link:** [Baidu Netdisk (百度网盘)](https://pan.baidu.com/s/1WVWRA3ALyzsJd0kSTDWWOA?pwd=dmuy)
+* **Download Link:** [Baidu Netdisk](https://pan.baidu.com/s/1WVWRA3ALyzsJd0kSTDWWOA?pwd=dmuy)
 * **Extraction Code:** `dmuy`
+
+### 📥 权重下载 (Weight Download)
+
+
+| Model Variant | Dataset | Download Link | Extraction Code |
+| :--- | :--- | :--- | :--- |
+| **GACNet-T (RGBDrone)** | RGBTDronePerson | [Baidu Netdisk](https://pan.baidu.com/s/1AzvDIDhJtk3CJVpPTGRkZA) | `161n` |
+| **GACNet-L (RGBDrone)** | RGBTDronePerson | [Baidu Netdisk](https://pan.baidu.com/s/14Y4cYFEbi_ExBSQ_B1rccQ) | `e55v` |
 
 **Directory Structure:**
 After downloading and unzipping, please organize the data as follows:
@@ -30,7 +36,7 @@ datasets/
 └── RGBTDronePerson/
     ├── train/
     │   ├── hr/          # High-Resolution Ground Truth
-    │   └── lr/          # Low-Resolution (Visible & Thermal)
+    │   └── lr/          # Low-Resolution (x4Thermal)
     └── val/
         ├── hr/
         └── lr/
