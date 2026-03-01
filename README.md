@@ -28,7 +28,7 @@ Evaluate the model on the **RGBTDronePerson** dataset for download.
 | :--- | :--- | :--- | :--- |
 | **GACNet-T (RGBDrone)** | RGBTDronePerson | [Baidu Netdisk](https://pan.baidu.com/s/1AzvDIDhJtk3CJVpPTGRkZA) | `161n` |
 | **GACNet-S (RGBDrone)** | RGBTDronePerson | [Baidu Netdisk](https://pan.baidu.com/s/181NOh17OYWIKI6P_Gxf4XA?pwd) | `qkbe` |
-| **GACNet-L (RGBDrone)** | RGBTDronePerson | [Baidu Netdisk](https://pan.baidu.com/s/1yD3SfNVwa6G1o_ZvK2mDvQ) | `62f3` |
+| **GACNet-L (RGBDrone)** | RGBTDronePerson | [Baidu Netdisk](https://pan.baidu.com/s/1rG2q2WfblPl9RHfRqyB5Vg) | `1mdh` |
 
 **Directory Structure:**
 After downloading and unzipping, please organize the data as follows:
